@@ -1,14 +1,14 @@
 {
-  "name": "south-jam",
+  "name": "southjam-website",
   "version": "1.0.0",
   "private": true,
-  "description": "south-jam",
-  "author": "Alex Crocker",
+  "description": "The official website for the SouthJam meetup group",
+  "author": "Alex Crocker <hello@crock.dev>",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
