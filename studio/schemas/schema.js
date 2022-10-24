@@ -5,10 +5,19 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
-import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
+
+// object schemas
+import blockContent from './object/blockContent'
+import menuItem from './object/menuItem'
+import socialLink from './object/socialLink'
+import accessibleImage from './object/accessibleImage'
+
+// document schemas
+import category from './document/category'
+import post from './document/post'
+import author from './document/author'
+import event from './document/event'
+import siteSettings from './document/siteSettings'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,8 +31,13 @@ export default createSchema({
     post,
     author,
     category,
+    event,
+    siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
+    menuItem,
+    socialLink,
+    accessibleImage,
   ]),
 })
